@@ -1,0 +1,7 @@
+services:
+  latex:
+    build: .
+    volumes:
+      - ./src:/latex/src
+      - ./output:/latex/output
+    command: /latex/scripts/build.sh
